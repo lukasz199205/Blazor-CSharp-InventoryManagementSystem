@@ -1,0 +1,15 @@
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.UseCases.deps.json
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.UseCases.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.UseCases.pdb
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.CoreBusiness.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\bin\Debug\net6.0\IMS.CoreBusiness.pdb
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.csproj.AssemblyReference.cache
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.AssemblyInfoInputs.cache
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.AssemblyInfo.cs
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.csproj.CopyComplete
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\refint\IMS.UseCases.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\IMS.UseCases.pdb
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.UseCases\obj\Debug\net6.0\ref\IMS.UseCases.dll
