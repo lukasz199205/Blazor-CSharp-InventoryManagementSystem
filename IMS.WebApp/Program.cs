@@ -1,3 +1,5 @@
+using IMS.Plugins.InMemory;
+using IMS.UseCases.Inventories.PluginInterfaces;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using IMS.WebApp.Data;
@@ -8,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+
+builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
 
 var app = builder.Build();
 

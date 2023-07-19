@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.UseCases", "IMS.UseCase
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.CoreBusiness", "IMS.CoreBusiness\IMS.CoreBusiness.csproj", "{DF871C09-7EF6-4249-8A92-9CA51FD48297}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IMS.Plugins", "IMS.Plugins", "{74FE9F09-2A64-43DA-AE8E-92FA0D1D7CB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.Plugins.InMemory", "IMS.Plugins\IMS.Plugins.InMemory\IMS.Plugins.InMemory.csproj", "{6AADD48F-2A34-4124-B8A8-B44ABCB1A77D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,12 @@ Global
 		{DF871C09-7EF6-4249-8A92-9CA51FD48297}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF871C09-7EF6-4249-8A92-9CA51FD48297}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF871C09-7EF6-4249-8A92-9CA51FD48297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AADD48F-2A34-4124-B8A8-B44ABCB1A77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AADD48F-2A34-4124-B8A8-B44ABCB1A77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AADD48F-2A34-4124-B8A8-B44ABCB1A77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AADD48F-2A34-4124-B8A8-B44ABCB1A77D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6AADD48F-2A34-4124-B8A8-B44ABCB1A77D} = {74FE9F09-2A64-43DA-AE8E-92FA0D1D7CB2}
 	EndGlobalSection
 EndGlobal
