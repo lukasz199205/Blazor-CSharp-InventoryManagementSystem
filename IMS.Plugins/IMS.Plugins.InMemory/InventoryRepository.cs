@@ -36,4 +36,9 @@ public class InventoryRepository : IInventoryRepository
         
         return Task.CompletedTask;
     }
+
+    public Task UpdateInventoryAsync(Inventory inventory)
+    {
+        throw new NotImplementedException();
+    }
 }
