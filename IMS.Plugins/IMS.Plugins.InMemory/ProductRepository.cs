@@ -22,4 +22,17 @@ public class ProductRepository : IProductRepository
 
         return _products.Where(x => x.ProductName.Contains(name, StringComparison.OrdinalIgnoreCase));
     }
+
+    public Task AddProductAsync(Product product)
+    {
+        if (_products.Any(x => x.ProductName.Equals(product.ProductName, StringComparison.OrdinalIgnoreCase)))
+            return Task.CompletedTask;
+
+        var maxId = _products.Max(x => x.ProductId);
+        product.ProductId = maxId + 1;
+        
+        _products.Add(product);
+        
+        return Task.CompletedTask;
+    }
 }
