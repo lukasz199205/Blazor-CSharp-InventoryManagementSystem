@@ -39,7 +39,7 @@ public class InventoryRepository : IInventoryRepository
 
     public Task UpdateInventoryAsync(Inventory inventory)
     {
-        if (_inventories.Any(x => x.InventoryId == inventory.InventoryId &&
+        if (_inventories.Any(x => x.InventoryId != inventory.InventoryId &&
                                                   x.InventoryName.Equals(inventory.InventoryName, StringComparison.OrdinalIgnoreCase)))
             return Task.CompletedTask;
         
@@ -52,5 +52,19 @@ public class InventoryRepository : IInventoryRepository
         }
         
         return Task.CompletedTask;
+    }
+
+    public async Task<Inventory> GetInventoryByIdAsync(int inventoryId)
+    {
+        var inv = _inventories.First(x => x.InventoryId == inventoryId);
+        var newInv = new Inventory
+        {
+            InventoryId = inv.InventoryId,
+            InventoryName = inv.InventoryName,
+            Price = inv.Price,
+            Quantity = inv.Quantity
+        };
+
+        return await Task.FromResult(newInv);
     }
 }
