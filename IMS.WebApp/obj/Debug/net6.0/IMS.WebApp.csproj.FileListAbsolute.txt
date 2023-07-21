@@ -32,3 +32,4 @@ C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.WebApp\obj\Debug\net6
 C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.WebApp\obj\Debug\net6.0\IMS.WebApp.pdb
 C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.WebApp\obj\Debug\net6.0\IMS.WebApp.genruntimeconfig.cache
 C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.WebApp\obj\Debug\net6.0\ref\IMS.WebApp.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.WebApp\obj\Debug\net6.0\scopedcss\Controls\Inventories\SearchAndDisplayInventoriesComponent.razor.rz.scp.css
