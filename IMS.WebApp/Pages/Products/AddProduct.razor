@@ -33,6 +33,10 @@
             class="form-control">
         </InputNumber>
     </div>
+    <div class="form-group">
+        <label for="invs">Inventories</label>
+        <SearchAndDisplayInventoriesComponent></SearchAndDisplayInventoriesComponent>
+    </div>
     <br/>
     <button type="submit" class="btn btn-primary">
         Save
@@ -41,7 +45,6 @@
         Cancel
     </button>
 </EditForm>
-
 @code {
     private Product product = new Product();
 
