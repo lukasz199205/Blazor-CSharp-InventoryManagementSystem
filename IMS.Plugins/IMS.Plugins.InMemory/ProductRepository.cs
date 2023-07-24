@@ -74,4 +74,21 @@ public class ProductRepository : IProductRepository
 
         return await Task.FromResult(newProd);
     }
+
+    public Task UpdateProductAsync(Product product)
+    {
+        if (_products.Any(x => x.ProductId != product.ProductId &&
+                               x.ProductName.ToLower() == product.ProductName.ToLower())) return Task.CompletedTask;
+
+        var prod = _products.FirstOrDefault(x => x.ProductId == product.ProductId);
+        if (prod != null)
+        {
+            prod.ProductName = product.ProductName;
+            prod.Price = product.Price;
+            prod.Quantity = product.Quantity;
+            prod.ProductInventories = product.ProductInventories;
+        }
+
+        return Task.CompletedTask;
+    }
 }
