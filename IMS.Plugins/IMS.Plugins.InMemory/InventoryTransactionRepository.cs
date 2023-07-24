@@ -5,11 +5,11 @@ namespace IMS.Plugins.InMemory;
 
 public class InventoryTransactionRepository : IInventoryTransactionRepository
 {
-    public List<InventoryTrasaction> _inventoryTrasactions = new List<InventoryTrasaction>();
+    public List<InventoryTransaction> _inventoryTrasactions = new List<InventoryTransaction>();
     
     public void PurchaseAsync(string poNumber, Inventory inventory, int quantity, string doneBy, double price)
     {
-        this._inventoryTrasactions.Add(new InventoryTrasaction
+        this._inventoryTrasactions.Add(new InventoryTransaction
         {
             PONumber = poNumber,
             InventoryId = inventory.InventoryId,
