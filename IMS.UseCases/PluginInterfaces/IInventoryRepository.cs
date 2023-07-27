@@ -1,6 +1,6 @@
 ﻿using IMS.CoreBusiness;
 
-namespace IMS.UseCases.Inventories.PluginInterfaces;
+namespace IMS.UseCases.PluginInterfaces;
 
 public interface IInventoryRepository
 {

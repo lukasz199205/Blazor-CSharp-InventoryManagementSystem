@@ -21,4 +21,19 @@ public class InventoryTransactionRepository : IInventoryTransactionRepository
             UnitPrice = price
         });
     }
+
+    public void ProduceAsync(string productionNumber, Inventory inventory, int quantityToConsume, string doneBy, double price)
+    {
+        this._inventoryTrasactions.Add(new InventoryTransaction
+        {
+            ProductionNumber = productionNumber,
+            InventoryId = inventory.InventoryId,
+            QuantityBefore = inventory.Quantity,
+            ActivityType = InventoryTransactionType.ProduceProduct,
+            QuantityAfter = inventory.Quantity - quantityToConsume,
+            TransactionDate = DateTime.Now,
+            DoneBy = doneBy,
+            UnitPrice = price
+        });
+    }
 }
