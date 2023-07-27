@@ -6,11 +6,12 @@
 @inject IViewProductByIdUseCase ViewProductByIdUseCase
 @inject IProduceProductUseCase ProduceProductUseCase
 
+@inject IJSRuntime JsRuntime
 
 <h3>Produce Product</h3>
 <br/>
 
-<EditForm Model="produceViewModel" OnValidSubmit="Produce">
+<EditForm id="produce-form" Model="produceViewModel" OnValidSubmit="Produce">
     <DataAnnotationsValidator></DataAnnotationsValidator>
     <ValidationSummary></ValidationSummary>
 
@@ -69,5 +70,15 @@
 
         produceViewModel = new ProduceViewModel();
         this.selectedProduct = null;
+    }
+    
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+
+        if (firstRender)
+        {
+            JsRuntime.InvokeVoidAsync("PreventFromSubmition", "produce-form");
+        }
     }
 }
