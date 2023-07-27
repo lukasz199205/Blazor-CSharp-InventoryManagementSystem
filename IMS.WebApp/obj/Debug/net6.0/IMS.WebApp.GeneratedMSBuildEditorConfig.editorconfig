@@ -47,6 +47,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUHJvZHVjdHNcU2VhcmNoUHJvZHVjdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Łukasz/Desktop/Repozytoria/RiderProjects/IMS/IMS.WebApp/Pages/Activities/ProduceProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdGllc1xQcm9kdWNlUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Łukasz/Desktop/Repozytoria/RiderProjects/IMS/IMS.WebApp/Pages/Activities/PurchaseInventory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdGllc1xQdXJjaGFzZUludmVudG9yeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
