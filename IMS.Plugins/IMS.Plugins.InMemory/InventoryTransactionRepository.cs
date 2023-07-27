@@ -5,6 +5,12 @@ namespace IMS.Plugins.InMemory;
 
 public class InventoryTransactionRepository : IInventoryTransactionRepository
 {
+    private readonly IInventoryRepository inventoryRepository;
+
+    public InventoryTransactionRepository(IInventoryRepository inventoryRepository)
+    {
+        this.inventoryRepository = inventoryRepository;
+    }
     public List<InventoryTransaction> _inventoryTrasactions = new List<InventoryTransaction>();
     
     public void PurchaseAsync(string poNumber, Inventory inventory, int quantity, string doneBy, double price)
@@ -35,5 +41,34 @@ public class InventoryTransactionRepository : IInventoryTransactionRepository
             DoneBy = doneBy,
             UnitPrice = price
         });
+    }
+
+    public async Task<IEnumerable<InventoryTransaction>> GetInventoryTransactionsAsync(string inventoryName, DateTime? dateFrom, DateTime? dateTo,
+        InventoryTransactionType? transactionType)
+    {
+        var inventories = (await inventoryRepository.GetInventoriesByNameAsync(string.Empty)).ToList();
+
+        var query = from it in this._inventoryTrasactions
+            join inv in inventories on it.InventoryId equals inv.InventoryId
+            where
+                (string.IsNullOrWhiteSpace(inventoryName) ||
+                 inv.InventoryName.ToLower().IndexOf(inventoryName.ToLower()) >= 0) &&
+                (!dateFrom.HasValue || it.TransactionDate >= dateFrom.Value.Date) &&
+                (!dateTo.HasValue || it.TransactionDate <= dateTo.Value.Date) &&
+                (!transactionType.HasValue || it.ActivityType == transactionType)
+            select new InventoryTransaction
+            {
+                Inventory = inv,
+                InventoryTransactionId = it.InventoryTransactionId,
+                PONumber = it.PONumber,
+                InventoryId = it.InventoryId,
+                QuantityBefore = it.QuantityBefore,
+                QuantityAfter = it.QuantityAfter,
+                ActivityType = it.ActivityType,
+                TransactionDate = it.TransactionDate,
+                DoneBy = it.DoneBy,
+                UnitPrice = it.UnitPrice
+            };
+        return query;
     }
 }
