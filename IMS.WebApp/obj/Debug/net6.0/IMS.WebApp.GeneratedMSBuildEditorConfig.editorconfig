@@ -99,6 +99,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0c1xJbnZlbnRvcnlUcmFuc2FjdGlvblJlcG9ydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Łukasz/Desktop/Repozytoria/RiderProjects/IMS/IMS.WebApp/Pages/Reports/ProductTransactionReport.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0c1xQcm9kdWN0VHJhbnNhY3Rpb25SZXBvcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Łukasz/Desktop/Repozytoria/RiderProjects/IMS/IMS.WebApp/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
