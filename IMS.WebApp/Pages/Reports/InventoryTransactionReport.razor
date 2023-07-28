@@ -3,10 +3,11 @@
 @using IMS.UseCases.Reports.Interfaces
 
 @inject ISearchInventoryTransactionsUseCase SearchInventoryTransactionsUseCase
+@inject IJSRuntime JsRuntime
 
 <h3>Inventory Transactions</h3>
 <br/>
-
+<div id="printarea">
 <div class="row">
     <div class="col">
         <label for="inv">Inventory Name</label>
@@ -79,6 +80,7 @@
         </tbody>
     </table>
 }
+</div>
 
 
 @code {
@@ -103,7 +105,7 @@
 
     private void PrintReport()
     {
-        
+        JsRuntime.InvokeVoidAsync("print");
     }
 
 }
