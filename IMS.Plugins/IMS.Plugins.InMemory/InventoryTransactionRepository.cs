@@ -61,6 +61,7 @@ public class InventoryTransactionRepository : IInventoryTransactionRepository
                 Inventory = inv,
                 InventoryTransactionId = it.InventoryTransactionId,
                 PONumber = it.PONumber,
+                ProductionNumber = it.ProductionNumber,
                 InventoryId = it.InventoryId,
                 QuantityBefore = it.QuantityBefore,
                 QuantityAfter = it.QuantityAfter,
