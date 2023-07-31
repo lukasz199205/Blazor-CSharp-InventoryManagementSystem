@@ -15,3 +15,5 @@ C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.E
 C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.pdb
 C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.genruntimeconfig.cache
 C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\ref\IMS.Plugins.EFCoreSql.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\bin\Debug\net6.0\IMS.UseCases.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\bin\Debug\net6.0\IMS.UseCases.pdb
