@@ -1751,6 +1751,22 @@
           "bin/placeholder/IMS.CoreBusiness.dll": {}
         }
       },
+      "IMS.Plugins.EFCoreSql/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IMS.CoreBusiness": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
+        },
+        "compile": {
+          "bin/placeholder/IMS.Plugins.EFCoreSql.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IMS.Plugins.EFCoreSql.dll": {}
+        }
+      },
       "IMS.Plugins.InMemory/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -5722,6 +5738,11 @@
       "path": "../IMS.CoreBusiness/IMS.CoreBusiness.csproj",
       "msbuildProject": "../IMS.CoreBusiness/IMS.CoreBusiness.csproj"
     },
+    "IMS.Plugins.EFCoreSql/1.0.0": {
+      "type": "project",
+      "path": "../IMS.Plugins/IMS.Plugins.EFCoreSql/IMS.Plugins.EFCoreSql.csproj",
+      "msbuildProject": "../IMS.Plugins/IMS.Plugins.EFCoreSql/IMS.Plugins.EFCoreSql.csproj"
+    },
     "IMS.Plugins.InMemory/1.0.0": {
       "type": "project",
       "path": "../IMS.Plugins/IMS.Plugins.InMemory/IMS.Plugins.InMemory.csproj",
@@ -5735,6 +5756,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "IMS.Plugins.EFCoreSql >= 1.0.0",
       "IMS.Plugins.InMemory >= 1.0.0",
       "IMS.UseCases >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
@@ -5770,6 +5792,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.EFCoreSql\\IMS.Plugins.EFCoreSql.csproj": {
+              "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.EFCoreSql\\IMS.Plugins.EFCoreSql.csproj"
+            },
             "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj": {
               "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj"
             },

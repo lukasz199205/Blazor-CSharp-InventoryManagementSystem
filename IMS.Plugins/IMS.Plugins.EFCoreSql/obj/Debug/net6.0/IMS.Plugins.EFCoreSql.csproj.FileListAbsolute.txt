@@ -1,0 +1,17 @@
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\bin\Debug\net6.0\IMS.Plugins.EFCoreSql.deps.json
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\bin\Debug\net6.0\IMS.Plugins.EFCoreSql.runtimeconfig.json
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\bin\Debug\net6.0\IMS.Plugins.EFCoreSql.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\bin\Debug\net6.0\IMS.Plugins.EFCoreSql.pdb
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\bin\Debug\net6.0\IMS.CoreBusiness.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\bin\Debug\net6.0\IMS.CoreBusiness.pdb
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.csproj.AssemblyReference.cache
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.AssemblyInfoInputs.cache
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.AssemblyInfo.cs
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.csproj.CoreCompileInputs.cache
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.csproj.CopyComplete
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\refint\IMS.Plugins.EFCoreSql.dll
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.pdb
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\IMS.Plugins.EFCoreSql.genruntimeconfig.cache
+C:\Users\Łukasz\Desktop\Repozytoria\RiderProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net6.0\ref\IMS.Plugins.EFCoreSql.dll

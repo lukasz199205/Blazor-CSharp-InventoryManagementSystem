@@ -1,3 +1,4 @@
+using IMS.Plugins.EFCoreSql;
 using IMS.Plugins.InMemory;
 using IMS.UseCases.Activities;
 using IMS.UseCases.Inventories;
@@ -8,8 +9,10 @@ using IMS.UseCases.Reports.Interfaces;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using IMS.WebApp.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<IMSContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("InventoryManagement")));
 
 // Add services to the container.
 builder.Services.AddRazorPages();
