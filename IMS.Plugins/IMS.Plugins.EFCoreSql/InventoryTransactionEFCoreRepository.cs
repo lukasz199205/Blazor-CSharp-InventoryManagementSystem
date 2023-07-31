@@ -3,7 +3,7 @@ using IMS.Plugins.EFCoreSql;
 using IMS.UseCases.PluginInterfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace IMS.Plugins.InMemory;
+namespace IMS.Plugins.EFCoreSql;
 
 public class InventoryTransactionEFCoreRepository : IInventoryTransactionRepository
 {
