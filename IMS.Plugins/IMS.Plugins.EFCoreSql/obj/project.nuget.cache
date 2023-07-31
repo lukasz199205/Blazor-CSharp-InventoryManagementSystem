@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9UoP1y6ct1fPR/4WulSRgCPSP5ioPt3iZwu+cxwUemlS977iuYEos5QRbxIUwXfe2r+ssP5oCAv1pUnLZJE7sw==",
+  "dgSpecHash": "7Fj1TSjGPG+xYKApQTea2zgZw8SE4DwPyM+Fxtua/yrnPwQn8IqTwLT6eBZKJSBPcDXmGHh8Nm9G5cZ+M/wqQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.WebApp\\IMS.WebApp.csproj",
+  "projectFilePath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.EFCoreSql\\IMS.Plugins.EFCoreSql.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Łukasz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Łukasz\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",

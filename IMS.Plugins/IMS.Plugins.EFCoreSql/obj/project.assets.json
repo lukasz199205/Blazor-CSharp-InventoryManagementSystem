@@ -1740,42 +1740,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
-      },
-      "IMS.CoreBusiness/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/IMS.CoreBusiness.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/IMS.CoreBusiness.dll": {}
-        }
-      },
-      "IMS.Plugins.InMemory/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "IMS.UseCases": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/IMS.Plugins.InMemory.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/IMS.Plugins.InMemory.dll": {}
-        }
-      },
-      "IMS.UseCases/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "IMS.CoreBusiness": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/IMS.UseCases.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/IMS.UseCases.dll": {}
-        }
       }
     }
   },
@@ -5716,27 +5680,10 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "IMS.CoreBusiness/1.0.0": {
-      "type": "project",
-      "path": "../IMS.CoreBusiness/IMS.CoreBusiness.csproj",
-      "msbuildProject": "../IMS.CoreBusiness/IMS.CoreBusiness.csproj"
-    },
-    "IMS.Plugins.InMemory/1.0.0": {
-      "type": "project",
-      "path": "../IMS.Plugins/IMS.Plugins.InMemory/IMS.Plugins.InMemory.csproj",
-      "msbuildProject": "../IMS.Plugins/IMS.Plugins.InMemory/IMS.Plugins.InMemory.csproj"
-    },
-    "IMS.UseCases/1.0.0": {
-      "type": "project",
-      "path": "../IMS.UseCases/IMS.UseCases.csproj",
-      "msbuildProject": "../IMS.UseCases/IMS.UseCases.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "IMS.Plugins.InMemory >= 1.0.0",
-      "IMS.UseCases >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0"
@@ -5748,11 +5695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.WebApp\\IMS.WebApp.csproj",
-      "projectName": "IMS.WebApp",
-      "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.WebApp\\IMS.WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.EFCoreSql\\IMS.Plugins.EFCoreSql.csproj",
+      "projectName": "IMS.Plugins.EFCoreSql",
+      "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.EFCoreSql\\IMS.Plugins.EFCoreSql.csproj",
       "packagesPath": "C:\\Users\\Łukasz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.WebApp\\obj\\",
+      "outputPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.EFCoreSql\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Łukasz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5768,14 +5715,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj": {
-              "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj"
-            },
-            "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.UseCases\\IMS.UseCases.csproj": {
-              "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.UseCases\\IMS.UseCases.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -5815,9 +5755,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
