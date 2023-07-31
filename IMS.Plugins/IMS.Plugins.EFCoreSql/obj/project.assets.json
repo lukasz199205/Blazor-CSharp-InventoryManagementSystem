@@ -1750,6 +1750,19 @@
         "runtime": {
           "bin/placeholder/IMS.CoreBusiness.dll": {}
         }
+      },
+      "IMS.UseCases/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IMS.CoreBusiness": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IMS.UseCases.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IMS.UseCases.dll": {}
+        }
       }
     }
   },
@@ -5695,11 +5708,17 @@
       "type": "project",
       "path": "../../IMS.CoreBusiness/IMS.CoreBusiness.csproj",
       "msbuildProject": "../../IMS.CoreBusiness/IMS.CoreBusiness.csproj"
+    },
+    "IMS.UseCases/1.0.0": {
+      "type": "project",
+      "path": "../../IMS.UseCases/IMS.UseCases.csproj",
+      "msbuildProject": "../../IMS.UseCases/IMS.UseCases.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "IMS.CoreBusiness >= 1.0.0",
+      "IMS.UseCases >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4",
@@ -5735,6 +5754,9 @@
           "projectReferences": {
             "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {
               "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj"
+            },
+            "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.UseCases\\IMS.UseCases.csproj": {
+              "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.UseCases\\IMS.UseCases.csproj"
             }
           }
         }

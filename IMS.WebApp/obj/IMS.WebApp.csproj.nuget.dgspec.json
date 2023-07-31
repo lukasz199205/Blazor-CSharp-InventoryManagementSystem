@@ -85,6 +85,9 @@
             "projectReferences": {
               "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {
                 "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj"
+              },
+              "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.UseCases\\IMS.UseCases.csproj": {
+                "projectPath": "C:\\Users\\Łukasz\\Desktop\\Repozytoria\\RiderProjects\\IMS\\IMS.UseCases\\IMS.UseCases.csproj"
               }
             }
           }
