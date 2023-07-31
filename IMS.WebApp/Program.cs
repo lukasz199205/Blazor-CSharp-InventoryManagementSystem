@@ -12,7 +12,10 @@ using IMS.WebApp.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<IMSContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("InventoryManagement")));
+builder.Services.AddDbContextFactory<IMSContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("InventoryManagement"));
+});
 
 // Add services to the container.
 builder.Services.AddRazorPages();
