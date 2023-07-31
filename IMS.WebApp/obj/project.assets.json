@@ -5737,6 +5737,7 @@
     "net6.0": [
       "IMS.Plugins.InMemory >= 1.0.0",
       "IMS.UseCases >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0"
@@ -5788,6 +5789,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.9, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
