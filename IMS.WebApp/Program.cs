@@ -10,12 +10,28 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using IMS.WebApp.Data;
 using Microsoft.AspNetCore.Hosting.StaticWebAssets;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Configre EF Core for Identity
+var constr = builder.Configuration.GetConnectionString("InventoryManagement");
+
+builder.Services.AddDbContext<AccountDbContext>(options =>
+{
+    options.UseNpgsql(constr);
+});
+
+//configure identity
+builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+{
+    options.SignIn.RequireConfirmedEmail = false;
+}).AddEntityFrameworkStores<AccountDbContext>();
+
 builder.Services.AddDbContextFactory<IMSContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("InventoryManagement"));
+    options.UseNpgsql(constr);
 });
 
 // Add services to the container.
@@ -73,6 +89,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
