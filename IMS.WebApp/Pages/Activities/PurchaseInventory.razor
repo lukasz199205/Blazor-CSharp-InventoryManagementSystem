@@ -47,18 +47,36 @@
 
 
 @code {
+    private AuthenticationState? authenticationState;
+
+    [CascadingParameter]
+    private Task<AuthenticationState>? authtenticationStateTask { get; set; }
+
     private PurchaseViewModel purchaseViewModel = new PurchaseViewModel();
 
     private Inventory? selectedInventory = null;
 
+    protected override async Task OnInitializedAsync()
+    {
+        if (authtenticationStateTask != null)
+        {
+            authenticationState = await authtenticationStateTask;
+        }
+    }
+
     private async Task Purchase()
     {
-        await PurchaseInventoryUseCase.ExecuteAsync(
-            this.purchaseViewModel.PONumber,
-            this.selectedInventory,
-            this.purchaseViewModel.QuantityToPurchase,
-            "Frank"
-            );
+        if (authenticationState != null &&
+            this.selectedInventory != null &&
+            !string.IsNullOrWhiteSpace(authenticationState.User?.Identity?.Name))
+        {
+            await PurchaseInventoryUseCase.ExecuteAsync(
+                this.purchaseViewModel.PONumber,
+                this.selectedInventory,
+                this.purchaseViewModel.QuantityToPurchase,
+                authenticationState.User.Identity.Name
+                );
+        }
         this.purchaseViewModel = new PurchaseViewModel();
         this.selectedInventory = null;
     }
@@ -73,7 +91,6 @@
 
     private async Task OnItemSelected(ItemViewModel item)
     {
-
         this.selectedInventory = await ViewInventoryByIdUseCase.ExecuteAsync(item.Id);
         purchaseViewModel.InventoryId = item.Id;
         purchaseViewModel.InventoryPrice = this.selectedInventory.Price;

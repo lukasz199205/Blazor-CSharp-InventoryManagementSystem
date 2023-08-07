@@ -42,9 +42,22 @@
 </EditForm>
 
 @code {
+    private AuthenticationState? authenticationState;
+    
+    [CascadingParameter]
+    private Task<AuthenticationState>? authtenticationStateTask { get; set; }
+    
     private ProduceViewModel produceViewModel = new ProduceViewModel();
     private Product? selectedProduct = null;
-    
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (authtenticationStateTask != null)
+        {
+            authenticationState = await authtenticationStateTask;
+        }
+    }
+
     private async Task<List<ItemViewModel>?> SearchProduct(string name)
     {
         var list = await ViewProductsByNameUseCase.ExecuteAsync(name);
@@ -63,10 +76,16 @@
 
     private async Task Produce()
     {
-        await ProduceProductUseCase.ExecuteAsync(this.produceViewModel.ProductionNumber,
-            this.selectedProduct,
-            this.produceViewModel.QuantityToProduce,
-            "Frank");
+        if (authenticationState != null &&
+            this.selectedProduct != null &&
+            !string.IsNullOrWhiteSpace(authenticationState.User?.Identity?.Name))
+        {
+            await ProduceProductUseCase.ExecuteAsync(this.produceViewModel.ProductionNumber,
+                this.selectedProduct,
+                this.produceViewModel.QuantityToProduce,
+                authenticationState.User.Identity.Name);
+        }
+        
 
         produceViewModel = new ProduceViewModel();
         this.selectedProduct = null;

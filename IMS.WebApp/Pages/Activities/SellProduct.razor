@@ -37,18 +37,31 @@
         <InputNumber id="qty" @bind-Value="sellViewModel.QuantityToSell" class="form-control"></InputNumber>
     </div>
     <div class="form-group">
-            <label for="price">Unit Price</label>
-            <InputNumber id="price" @bind-Value="sellViewModel.UnitPrice" class="form-control"></InputNumber>
-        </div>
+        <label for="price">Unit Price</label>
+        <InputNumber id="price" @bind-Value="sellViewModel.UnitPrice" class="form-control"></InputNumber>
+    </div>
     <br/>
     <button type="submit" class="btn btn-primary">Sell</button>
 </EditForm>
 
 @code {
+    private AuthenticationState? authenticationState;
+
+    [CascadingParameter]
+    private Task<AuthenticationState>? authtenticationStateTask { get; set; }
+    
     private SellViewModel sellViewModel = new SellViewModel();
 
     private Product? selectedProduct = null;
     
+    protected override async Task OnInitializedAsync()
+    {
+        if (authtenticationStateTask != null)
+        {
+            authenticationState = await authtenticationStateTask;
+        }
+    }
+
     private async Task<List<ItemViewModel>?> SearchProduct(string name)
     {
         var list = await ViewProductsByNameUseCase.ExecuteAsync(name);
@@ -67,17 +80,22 @@
 
     private async Task Sell()
     {
-        await SellProductUseCase.ExecuteAsync(
-            this.sellViewModel.SalesOrderNumber,
-            this.sellViewModel.Product,
-            this.sellViewModel.QuantityToSell,
-            this.sellViewModel.UnitPrice,
-            "Frank"
-            );
+        if (authenticationState != null &&
+            this.sellViewModel.Product != null &&
+            !string.IsNullOrWhiteSpace(authenticationState.User?.Identity?.Name))
+        {
+            await SellProductUseCase.ExecuteAsync(
+                this.sellViewModel.SalesOrderNumber,
+                this.sellViewModel.Product,
+                this.sellViewModel.QuantityToSell,
+                this.sellViewModel.UnitPrice,
+                authenticationState.User.Identity.Name
+                );
+        }
         this.sellViewModel = new SellViewModel();
         this.selectedProduct = null;
     }
-    
+
     protected override void OnAfterRender(bool firstRender)
     {
         base.OnAfterRender(firstRender);
@@ -87,4 +105,5 @@
             JsRuntime.InvokeVoidAsync("PreventFromSubmition", "sell-form");
         }
     }
+
 }
