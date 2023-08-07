@@ -8,6 +8,8 @@
 
 @inject IJSRuntime JsRuntime
 
+@attribute [Authorize(Policy = "Purchasers")]
+
 <h3>Purchase Inventory</h3>
 <br/>
 <EditForm id="purchase-form" Model="purchaseViewModel" OnValidSubmit="Purchase">
