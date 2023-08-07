@@ -18,7 +18,7 @@ var builder = WebApplication.CreateBuilder(args);
 //configure auth 
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("Admin", policy => policy.RequireClaim("Department", "Administratrion"));
+    options.AddPolicy("Admin", policy => policy.RequireClaim("Department", "Administration"));
     options.AddPolicy("Inventory", policy => policy.RequireClaim("Department", "InventoryManagement"));
     options.AddPolicy("Sales", policy => policy.RequireClaim("Department", "Sales"));
     options.AddPolicy("Purchasers", policy => policy.RequireClaim("Department", "Purchasing"));
